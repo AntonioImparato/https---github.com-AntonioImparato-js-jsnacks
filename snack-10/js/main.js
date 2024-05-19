@@ -5,17 +5,18 @@
 'use strict';
 //inizializzazione variabili
 let numeroUtente = 0;
-
+let numero1 = Number(prompt('inserisci numero'));
 //corpo programma
 
 for (let i = 1; i > numeroUtente; i++) {
     let numero2 = Number(prompt('inserisci numero'));
-
-    let numero1 = Number(prompt('inserisci numero'));
     // dopo il controllo diamo il valore alla variabile del ciclo i+2 in modo tale da uscire 
     if (numero1 === numero2) {
         console.log('hai inserito due numeri uguali consecutivamente');
         numeroUtente = i + 2;
+
+    } else {
+        numero1 = numero2;
     }
 
 }
